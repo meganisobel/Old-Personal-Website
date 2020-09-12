@@ -1,0 +1,165 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+  .colFlexItem1{
+    display: flex;
+    flex: 25%;
+    padding: 30px 20px;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .rowFlexContainer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .colFlexItem{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 30px 20px;
+    
+  }
+  
+
+  .material-placeholder{
+    color: rgba(0,0,0,0.0);
+    background-color: rgba(0,0,0,0.0);
+    box-shadow: none!important;
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 14vw;
+      margin-top: 20px;
+    }
+  
+    h2 {
+      font-size: 8vw;
+    }
+
+    .rowFlexContainer {
+      display: block;
+
+    }
+
+    .colFlexItem{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+  
+  @media screen and (min-width: 480px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 10px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    .rowFlexContainer {
+      display: block;
+
+    }
+
+    .colFlexItem{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  
+  
+  }
+  
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 20px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    .rowFlexContainer {
+      display: block;
+    }
+    .colFlexItem{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  
+  
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 100px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+
+    .rowFlexContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .colFlexItem{
+      width: 50%;
+    }
+
+
+  
+  
+  }
+  
+  
+  @media screen and (min-width: 1023px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 100px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .rowFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .colFlexItem{
+      width: 33.3%;
+    }
+  
+  
+  }
+  
+  
+  
+
+
+
+

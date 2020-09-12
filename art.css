@@ -1,0 +1,129 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+  .rowFlexContainer{
+    display: flex;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-self: flex-start;
+  }
+
+  .colFlexItem{
+    display: flex;
+    
+    justify-content: center;
+    align-self: center;
+    margin-top: 100px; 
+  }
+  
+  #rightSideOfPage{
+    margin-left: auto;
+    align-self: flex-start;
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 14vw;
+      margin-top: 10px;
+    }
+  
+    h2 {
+      font-size: 8vw;
+    }
+
+    .colFlexItem{
+      flex: 100%;
+    }
+  
+  }
+  
+  @media screen and (min-width: 480px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 10px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+    .colFlexItem{
+      flex: 100%;
+    }
+  
+  
+  }
+  
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 20px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+
+    .colFlexItem{
+      flex: 50%;
+      padding: 20px 20px;
+    }
+  
+  
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 100px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .colFlexItem{
+      flex: 33%;
+      padding: 20px 20px;
+    }
+  
+  
+  }
+  
+  
+  @media screen and (min-width: 1023px) {
+    h1 {
+      font-size: 70px;
+      margin-top: 100px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .colFlexItem{
+      flex: 25%;
+      padding: 20px 20px;
+    }
+  
+  
+  }
+  
+  
+  
+
+
+
+

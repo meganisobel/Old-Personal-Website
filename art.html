@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>Art</title>
+
+    <!--Responsive screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="art.css">
+
+    <!-- Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+   
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav1">
+    <div style="margin: 40px;"></div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="btn waves-effect waves-red  customButton"
+        style="background-color: rgb(241, 84, 84, 0.75);" id="homeButton">Home</a>
+    <a href="projects.html" class="btn waves-effect waves-red  customButton"
+        style="background-color: rgb(233, 134, 192, 0.85);" id="projectsButton">Projects</a>
+    <a href="art.html" class="btn waves-effect waves-red  customButton"
+        style="background-color: rgb(233, 134, 192, 0.85)" id="paintingButton">Painting</a>
+    <a href="travel.html" class="btn  waves-effect waves-red customButton"
+        style="background-color: rgb(233, 134, 192, 0.85)" id="travelButton">Travel</a>
+    <a href="https://www.fig1.shop" class="btn waves-effect waves-red customButton"
+        style="background-color: rgb(233, 134, 192, 0.85)" id="shopButton">Fig.1</a>
+    <a href="https://twitter.com/megisobeldavies" class="btn waves-effect waves-red customButton"
+        style="background-color: rgb(85, 172, 238, 0.85);"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/megan-isobel-davies" class="btn waves-effect waves-red customButton"
+        style="background-color: rgb(0, 123, 181, 0.85);"><i class="fa fa-linkedin"></i></a>
+</div>
+
+  <div id="background">
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+    <div id="mainBox">
+  
+        <div id="leftSideOfPage">
+          <div class="buttonsBox">
+            <a href="index.html" class="btn waves-effect waves-red  customButtonBig" style="background-color: rgb(233, 134, 192, 0.85);" id="homeButton"><i class="material-icons right">home</i>Home</a>
+            <a href="projects.html" class="btn waves-effect waves-red  customButtonBig" style="background-color: rgb(233, 134, 192, 0.85);" id="projectsButton"><i
+                class="material-icons right">work</i>Projects</a>
+            <a href="art.html" class="btn waves-effect waves-red  customButtonBig" style="background-color: rgb(241, 84, 84, 0.75);" id="paintingButton"><i
+                class="material-icons right">palette</i>Painting</a>
+            <a href="travel.html" class="btn  waves-effect waves-red customButtonBig" style="background-color: rgb(233, 134, 192, 0.85)" id="travelButton"><i
+                class="material-icons right">flight</i>Travel</a>
+                <a href="https://www.fig1.shop" class="btn waves-effect waves-red customButtonBig" style="background-color: rgb(233, 134, 192, 0.85)" id="shopButton"><i
+                  class="material-icons right">shopping_basket</i>Fig.1</a>
+                  <a href="https://twitter.com/megisobeldavies" class="btn-floating btn-large waves-effect waves-red" style="background-color: rgb(85, 172, 238, 0.85); margin-left: auto; margin-right: auto;"><i class="fa fa-twitter"></i></a>
+
+    
+                  <a href="https://www.linkedin.com/in/megan-isobel-davies" class="btn-floating btn-large waves-effect waves-red" style="background-color: rgb(0, 123, 181, 0.85); margin-left: auto; margin-right: auto;"><i class="fa fa-linkedin"></i></a>
+
+
+
+          </div>
+        </div>
+     
+
+        <div id="rightSideOfPage">
+
+    
+          <h1 style='text-align: left; margin-left: 5px;'>Art</h1>
+
+            <div class="rowFlexContainer">
+
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption = "South Africa" src="images/south_africa.jpg">
+                  <figcaption class="caption">South Africa</figcaption>
+                </div>
+              </div>
+
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption = "South Africa details" src="images/south_africa2.jpg">
+                  <figcaption class="caption">South Africa details</figcaption>
+                </div>
+                
+              </div>
+
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption="Small cat" src="images/cat1.jpg">
+                  <figcaption class="caption">Small cat</figcaption>
+                </div>
+              </div>
+            <div class="colFlexItem">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2 materialboxed" data-caption ="The Roaches" src="images/roaches.jpg">
+                <figcaption class="caption">The Roaches</figcaption>
+              </div>
+            </div>
+            <div class="rowFlexContainer">
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption = "No rain no flowers" src="images/cat2.jpg">
+                  <figcaption class="caption">No rain no flowers</figcaption>
+                </div>
+              </div>
+
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption="A cave" src="images/peaks.jpg">
+                  <figcaption class="caption">A cave</figcaption>
+                </div>
+              </div>
+
+              <div class="colFlexItem">
+                <div class="card-image">
+                  <img class="responsive-img z-depth-2 materialboxed" data-caption= "The Peak District" src="images/peaks2.jpg">
+                  <figcaption class="caption">The Peak District</figcaption>
+                </div>
+              </div>
+            <div class="colFlexItem">
+              <div class="card-image">
+                <img class="responsive-img z-depth-2 materialboxed" data-caption= "Table Mountain"src="images/table_mt.jpg">
+                <figcaption class="caption">Table Mountain</figcaption>
+              </div>
+            </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        })
+  </script>
+</body>
+
+</html>
