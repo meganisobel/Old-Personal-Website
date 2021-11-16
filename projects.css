@@ -1,29 +1,14 @@
-/**
- * index.scss
- * - Add any styles you want here!
- */
-
-  .colFlexItem1{
-    display: flex;
-    flex: 25%;
-    padding: 30px 20px;
-    justify-content: center;
-    align-self: center;
-  }
-  
-  .rowFlexContainer{
+.row-flex-container {
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .colFlexItem{
+.column-flex-item {
     display: flex;
     width: 50%;
     flex-direction: column;
     padding: 30px 20px;
-    
   }
-  
 
   .material-placeholder{
     color: rgba(0,0,0,0.0);
@@ -41,17 +26,16 @@
       font-size: 8vw;
     }
 
-    .rowFlexContainer {
+    .row-flex-container {
       display: block;
 
     }
 
-    .colFlexItem{
+    .column-flex-item{
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
-
   }
   
   @media screen and (min-width: 480px) {
@@ -64,19 +48,16 @@
       font-size: 36px;
     }
 
-    .rowFlexContainer {
+    .row-flex-container {
       display: block;
 
     }
 
-    .colFlexItem{
+    .column-flex-item{
       width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
-  
-  
-  
   }
   
   @media screen and (min-width: 600px) {
@@ -89,10 +70,10 @@
       font-size: 36px;
     }
 
-    .rowFlexContainer {
+    .row-flex-container {
       display: block;
     }
-    .colFlexItem{
+    .column-flex-item{
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -117,19 +98,14 @@
     }
 
 
-    .rowFlexContainer {
+    .row-flex-container {
       display: flex;
       justify-content: space-between;
     }
-    .colFlexItem{
+    .column-flex-item{
       width: 50%;
     }
-
-
-  
-  
   }
-  
   
   @media screen and (min-width: 1023px) {
     h1 {
@@ -145,16 +121,14 @@
       font-size: 16px;
     }
 
-    .rowFlexContainer {
+    .row-flex-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .colFlexItem{
+    .column-flex-item{
       width: 33.3%;
     }
-  
-  
   }
   
   

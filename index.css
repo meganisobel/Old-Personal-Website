@@ -1,3 +1,13 @@
+.headings-container {
+  max-width: 1000px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.heading {
+  margin: 0; 
+}
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 20vw;

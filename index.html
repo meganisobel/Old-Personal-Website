@@ -10,6 +10,9 @@
     <!--Responsive screen-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Favicon-->
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/hibiscus_1f33a.png">
+
     <!-- Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +20,7 @@
     <!--  Styles  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- Fonts-->
     <link
@@ -26,72 +29,48 @@
 
     <!-- Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
-   
     <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav1">
-        <div style="margin: 40px;"></div>
+    <div id="navigation-drawer" class="navigation-drawer">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html" class="btn waves-effect waves-red  customButton"
-            style="background-color: rgb(241, 84, 84, 0.75);" id="homeButton">Home</a>
-        <a href="projects.html" class="btn waves-effect waves-red  customButton"
-            style="background-color: rgb(233, 134, 192, 0.85);" id="projectsButton">Projects</a>
-        <a href="art.html" class="btn waves-effect waves-red  customButton"
-            style="background-color: rgb(233, 134, 192, 0.85)" id="paintingButton">Painting</a>
-        <a href="travel.html" class="btn  waves-effect waves-red customButton"
-            style="background-color: rgb(233, 134, 192, 0.85)" id="travelButton">Travel</a>
-        <a href="https://www.fig1.shop" class="btn waves-effect waves-red customButton"
-            style="background-color: rgb(233, 134, 192, 0.85)" id="shopButton">Fig.1</a>
-        <a href="https://twitter.com/megisobeldavies" class="btn waves-effect waves-red customButton"
-            style="background-color: rgb(85, 172, 238, 0.85);"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/megan-isobel-davies" class="btn waves-effect waves-red customButton"
-            style="background-color: rgb(0, 123, 181, 0.85);"><i class="fa fa-linkedin"></i></a>
+        <a href="index.html" class="btn waves-effect waves-red standard-button red-background">Home</a>
+        <a href="projects.html" class="btn waves-effect waves-red standard-button pink-background">Projects</a>
+        <a href="art.html" class="btn waves-effect waves-red standard-button pink-background">Painting</a>
+        <a href="travel.html" class="btn  waves-effect waves-red standard-button pink-background">Travel</a>
+        <a href="https://twitter.com/megisobeldavies" class="btn waves-effect waves standard-button social-media-button twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/megan-isobel-davies" class="btn waves-effect waves standard-button social-media-button linkedin"><i class="fa fa-linkedin"></i></a>
     </div>
 
-    <div id="background">
+    <div class="background">
         <span class="hamburger" onclick="openNav()">&#9776;</span>
-        <div id="mainBox">
-            <div id="leftSideOfPage">
-                <div class="buttonsBox">
-                    <a href="index.html" class="btn waves-effect waves-red  customButtonBig"
-                        style="background-color: rgb(241, 84, 84, 0.75);" id="homeButton"><i
+        <div class="main-container">
+            <div class="left-container">
+                <div class="navigation-container">
+                    <a href="index.html" class="btn waves-effect waves-red large-button red-background"><i
                             class="material-icons right">home</i>Home</a>
-                    <a href="projects.html" class="btn waves-effect waves-red  customButtonBig"
-                        style="background-color: rgb(233, 134, 192, 0.85);" id="projectsButton"><i
+                    <a href="projects.html" class="btn waves-effect waves-red large-button pink-background"><i
                             class="material-icons right">work</i>Projects</a>
-                    <a href="art.html" class="btn waves-effect waves-red  customButtonBig"
-                        style="background-color: rgb(233, 134, 192, 0.85)" id="paintingButton"><i
+                    <a href="art.html" class="btn waves-effect waves-red large-button pink-background"><i
                             class="material-icons right">palette</i>Painting</a>
-                    <a href="travel.html" class="btn  waves-effect waves-red customButtonBig"
-                        style="background-color: rgb(233, 134, 192, 0.85)" id="travelButton"><i
+                    <a href="travel.html" class="btn  waves-effect waves-red large-button pink-background"><i
                             class="material-icons right">flight</i>Travel</a>
-                    <a href="https://www.fig1.shop" class="btn waves-effect waves-red customButtonBig"
-                        style="background-color: rgb(233, 134, 192, 0.85)" id="shopButton"><i
-                            class="material-icons right">shopping_basket</i>Fig.1</a>
                     <a href="https://twitter.com/megisobeldavies"
-                        class="btn-floating btn-large waves-effect waves-red"
-                        style="background-color: rgb(85, 172, 238, 0.85); margin-left: auto; margin-right: auto;"><i
+                        class="btn-floating btn-large waves-effect waves social-media-button twitter"><i
                             class="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/megan-isobel-davies"
-                        class="btn-floating btn-large waves-effect waves-red"
-                        style="background-color: rgb(0, 123, 181, 0.85); margin-left: auto; margin-right: auto;"><i
+                        class="btn-floating btn-large waves-effect waves social-media-button linkedin"><i
                             class="fa fa-linkedin"></i></a>
                 </div>
             </div>
-            <div id="rightSideOfPage">
-                <div style='text-align: center;' class='smallBuffer'>
-                    <img class="responsive-img z-depth-2 materialboxed" style="max-width: 150px; border-radius: 50%; 
-                        margin-left: auto; 
-                        margin-right: auto; 
-                        margin-bottom: 0px" data-caption="This is me" src="images/IMG_3672.jpg" alt="Picture of me">
-                    <div style="max-width: 1000px; margin-left: auto; margin-right: auto;">
-                        <h2 style="text-align: left; margin-bottom: 0px; margin-top: 0px;"> Hi I'm </h2>
-                        <h1 style="margin-top: 0px; margin-bottom: 0px;">Megan Isobel Davies</h1>
-                        <h2 style="text-align: right; margin-bottom: 0px; margin-top: 0px;"> Or just Meg</h2>
+            <div class="right-container">
+                <div style='text-align: center;' class='buffer'>
+                    <img class="z-depth-2 materialboxed circular-image" data-caption="This is me" src="images/linked_in.jpg" alt="Megan Davies">
+                    <div class="headings-container">
+                        <h1 class="heading">Megan Isobel Davies</h1>
                     </div>    
                 </div>
 
@@ -102,11 +81,11 @@
     <script>
           
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("navigation-drawer").style.width = "250px";
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("navigation-drawer").style.width = "0";
         }
         $(document).ready(function () {
             $('.materialboxed').materialbox();

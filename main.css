@@ -1,14 +1,3 @@
-/**
- * index.scss
- * - Add any styles you want here!
- */
-
-
-
- * {
-  box-sizing: border-box;
-}
-
  h1 {
     font-family: 'Abril Fatface', sans-serif;
     color: orange;
@@ -42,14 +31,14 @@
     background-color: rgb(32, 40, 49);
   }
   
-  #background{
+  .background{
     padding: 30px;
     background-color: rgb(32, 40, 49);
     position: relative;
     justify-content: center;
   }
   
-  #mainBox {
+  .main-container {
     margin: auto;
     width: 100%;
     display: flex;
@@ -57,11 +46,24 @@
     justify-content: center;
   }
 
-  #rightSideOfPage {
+  .left-container {
+    margin-right: 16px;
+  }
+
+  .right-container {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .circular-image {
+    max-width: 150px; 
+    border-radius: 50%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 0;
+    width: 80%;
   }
 
 
@@ -87,7 +89,8 @@
     float: left;
   }
   
-  .sidenav1 {
+  .navigation-drawer {
+    padding-top: 40px;
     height: 100%;
     width: 0;
     position: fixed;
@@ -99,7 +102,7 @@
     transition: 0.5s;
   }
   
-  .sidenav1 .closebtn {
+  .navigation-drawer .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -107,7 +110,7 @@
     margin-left: 50px;
   }
   
-  .sidenav1 a {
+  .navigation-drawer a {
     text-decoration: none;
     font-size: 20px; 
     color: white;
@@ -115,7 +118,7 @@
     transition: 0.3s;
   }
 
-  .sidenav1 .closebtn {
+  .navigation-drawer .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -123,7 +126,7 @@
     margin-left: 50px;
   }
 
-  .customButton{
+  .standard-button {
     font-family: 'Lato', sans-serif;
     color: white;
     text-transform: none;
@@ -134,7 +137,7 @@
     padding: 0px 10px;
   }
 
-  .customButtonBig {
+  .large-button {
     font-family: 'Lato', sans-serif;
     color: white;
     padding: 0px 10px;
@@ -143,11 +146,49 @@
     border-radius: 2px;
   }
 
-  .buttonsBox {
+  .red-background {
+    background-color: rgb(241, 84, 84, 0.75);
+  }
+
+  .red-background:hover {
+    background-color: rgb(233, 134, 192, 0.75);
+  }
+
+  .red-background:focus {
+    background-color: rgb(233, 134, 192, 0.65);
+  }
+
+  .pink-background {
+    background-color: rgb(233, 134, 192, 0.85);
+  }
+
+  .pink-background:hover {
+    background-color: rgb(241, 84, 84, 0.75);
+  }
+
+  .pink-background:focus {
+    background-color: rgb(241, 84, 84, 0.65);
+  }
+
+  .social-media-button {
+    margin-left: 10px; 
+    margin-right: 10px;
+    align-self: center;
+  }
+
+  .twitter {
+    background-color: rgb(85, 172, 238, 0.85); 
+  }
+
+  .linkedin {
+    background-color: rgb(0, 123, 181, 0.85);
+  }
+
+  .navigation-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 16px;
     height: 700px;
   }
 
@@ -158,11 +199,11 @@
       display: block;
     }
   
-    #leftSideOfPage {
+    .left-container {
       display: none;
     }
   
-    #rightSideOfPage {
+    .right-container {
       max-width: 100%;
       margin: 0 0;
       display: flex;
@@ -177,11 +218,11 @@
       display: block;
     }
   
-    #leftSideOfPage{
+    .left-container{
       display: none;
     }
   
-    #rightSideOfPage {
+    .right-container {
       max-width: 100%;
       margin: 0 0;
       display: flex;
@@ -195,11 +236,11 @@
       display: block;
     }
   
-    #leftSideOfPage {
+    .left-container {
       display: none;
     }
   
-    #rightSideOfPage {
+    .right-container {
       max-width: 100%;
       margin: 0 0;
       display: flex;
@@ -213,23 +254,20 @@
       display: none;
     }
 
-    .sidenav1 {
+    .navigation-drawer {
       display: none;
     }
   
-    #leftSideOfPage{
+    .left-container{
       max-width: 10%;
       min-width: 10%;
       display: flex;
     }
   
-    #rightSideOfPage{
+    .right-container{
       max-width: 90%;
       min-width: 90%;
       display: flex;
     }
-    .smallBuffer {
-      margin-left: 20px;
-    }  
   }
   
